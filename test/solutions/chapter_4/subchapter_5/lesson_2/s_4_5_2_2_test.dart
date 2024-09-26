@@ -11,15 +11,12 @@ void main() {
         home: S4522(),
       ),
     );
-
     final helloTextFinder = find.byWidgetPredicate(
       (Widget widget) =>
           widget is Text && (widget.data?.startsWith('Hello ') ?? false),
       description: 'Text starting with "Hello "',
     );
-
     final buttonFinder = find.widgetWithText(ElevatedButton, 'Klick mich');
-
     expect(helloTextFinder, findsOneWidget);
     expect(buttonFinder, findsOneWidget);
   });

@@ -10,7 +10,6 @@ void main() {
         home: S4521(), // Ersetzen Sie dies durch Ihr tatsächliches Widget
       ),
     );
-
     final textFinder = find.text('Hello World');
     final centerFinder =
         find.ancestor(of: textFinder, matching: find.byType(Center));
