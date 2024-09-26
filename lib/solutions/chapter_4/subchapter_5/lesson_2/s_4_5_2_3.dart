@@ -19,7 +19,7 @@ class MyNameWidgetState extends State<MyNameWidget> {
   void _setname() {
     setState(
       () {
-        name = "Fadi Bdiwi";
+        name = "Dennis Durmus";
       },
     );
   }
